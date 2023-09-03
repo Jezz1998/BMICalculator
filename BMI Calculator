@@ -1,0 +1,16 @@
+name = input("What is your name: ")
+print("Hi " + name + "! If you provide following informations, I will tell you about your health.")
+hight = input("What is your hight(m): ")
+weight = input("What is your weight(kg): ")
+bmi = float(weight)/(float(hight) ** 2)
+print("Your BMI is: " + str(bmi))
+if bmi < 18.5:
+    print("According to your BMI; You are underweight. \n You should consider gaining weight through good diet and exercise habits, to increase your muscle mass.")
+elif 24.9 > bmi >=18.5:
+    print("Congradulations. You're in the healthy weight range. \n You may follow good diet and excercise habits. \n You can share those with your friends and family.")
+elif 29.9 > bmi >= 25.0: # (25.0, 29.9)
+    print("According to your BMI; You're in the overweight range. \n You are at increased risk for a variety of illnesses at your present weight. \n You should lose weight by changing your diet and exercising more. ")
+elif bmi >= 30.0:
+    print("According to your BMI: You're in Obesity condition. \n Your excess mass is putting you at risk for heart disease, diabetes, high blood pressure, gall bladder disease, circulation problems, and some cancers. \n You should lose weight by changing your diet and exercising more.")
+
+print("Thank you.")
